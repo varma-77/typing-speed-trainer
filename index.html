@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Trainer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⌨️ Typing Speed Trainer</h1>
+            <p>Improve your typing speed and accuracy</p>
+        </header>
+
+        <div class="stats">
+            <div class="stat">
+                <span class="label">WPM</span>
+                <span class="value" id="wpm">0</span>
+            </div>
+            <div class="stat">
+                <span class="label">Accuracy</span>
+                <span class="value" id="accuracy">100%</span>
+            </div>
+            <div class="stat">
+                <span class="label">Time</span>
+                <span class="value" id="timer">60s</span>
+            </div>
+        </div>
+
+        <div class="text-display" id="textDisplay"></div>
+
+        <textarea id="inputField" placeholder="Click here and start typing..." disabled></textarea>
+
+        <div class="controls">
+            <button id="startBtn" class="btn btn-primary">Start Test</button>
+            <button id="resetBtn" class="btn btn-secondary">Reset</button>
+        </div>
+
+        <div class="results" id="results" style="display:none;">
+            <h2>Test Complete!</h2>
+            <p>Words Per Minute: <strong id="finalWpm">0</strong></p>
+            <p>Accuracy: <strong id="finalAccuracy">0%</strong></p>
+            <p>Total Words Typed: <strong id="wordsTyped">0</strong></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
